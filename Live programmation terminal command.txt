@@ -1,0 +1,2 @@
+cd Desktop/"Projet NSI"
+browser-sync start --server --browser "firefox" --files "index.html, styles.css"

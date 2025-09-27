@@ -1,0 +1,512 @@
+/* Police d'écriture Google Sans */
+@font-face {
+  font-family: "Google Sans Flex";
+  src: url("https://fonts.gstatic.com/s/googlesansflex/v5/t5s6IQcYNIWbFgDgAAzZ34auoVyXkJCOvp3SFWJbN5hF8Ju1x5tKByN2l9sI40swNJwakXdYAZzz0jbnJ4qFQO5tGjLvDSkV4DyKMo6qQzwliVdHySgxyRg2eWQTmw.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 500;
+  font-stretch: 100%;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+
+
+/* Police d'écriture principale et faire en sorte qu'il n'y ai pas d'espace entre la page et le contenu
+   et style de toutes les scrollbar
+   ainsi qu'une variable pour les styles des bords des elements 1 2 3 et 4 */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
+    --border: 2px solid rgb(50, 50, 50);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+
+
+/* Styles de l'image et de la vidéo de Paris et
+   leur mise en page */
+.image-paris {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-paris-container {
+    height: 275px;
+}
+
+.video-paris {
+    height: 275px;
+}
+
+.video-paris-container {
+    height: 275px;
+}
+
+.image-video {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 275px;
+}
+
+
+
+/* Styles du logo et de la description de Paris et
+   leur mise en page */
+.logo-paris {
+    height: 100px;
+    width: auto;
+}
+
+.description {
+    margin-left: 20px;
+}
+
+.logo-description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+    padding-bottom: 30px;
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+
+
+/* Styles pour la barre de navigation,
+   du menu déroulant et
+   des boutons du menu déroulant */
+.menu-deroulant {
+    background-color: #3183ff;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.menu-deroulant a {
+    color: white;
+    text-align: center;
+    padding: 14px; /* 60px */
+    text-decoration: none;
+}
+
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px; /* 60px */
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+    min-width: 300px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #458fff;
+    min-width: 178px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#dropdown-content1 {
+    transform: translateX(35px);
+}
+
+#dropdown-content2 {
+    transform: translateX(60px);
+}
+
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    flex: 1;
+}
+
+.menu-deroulant a, 
+.dropdown .dropbtn {
+    flex: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #2e82ff;
+}
+
+.dropdown-content a:last-child:hover {
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+/* Effet de soulignement du menu déroulant*/
+.menu-deroulant a,
+.menu-deroulant .dropdown .dropbtn {
+    position: relative;
+}
+
+.menu-deroulant a::after,
+.menu-deroulant .dropdown .dropbtn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0.2px;
+    width: 100%;
+    height: 5.5px;
+    background-color: rgb(100, 196, 255);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.menu-deroulant a:hover::after,
+.menu-deroulant .dropdown .dropbtn:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.menu-deroulant .dropdown-content a:last-child::after {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    bottom: 0.7px;
+}
+
+
+
+/* ELEMENT 1 */
+/* Style et mise en page de l'élément 1 et du contenu qu'il contient */
+.image-Tour-Eiffel {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: bottom;
+    filter: brightness(70%);}
+
+.Description-Tour-Eiffel_h1 {
+    position: absolute;
+    top: 4%;
+    left: 4.6%;
+    color: white;
+    font-family: "Google Sans Flex";
+    background-color: rgba(0, 0, 0, 0.08);
+    padding: 10px 15px;
+    border-radius: 7px;
+    backdrop-filter: blur(5px);
+}
+
+.Description-Tour-Eiffel_h2 {
+    position: absolute;
+    top: 15%;
+    left: 4.6%;
+    color: white;
+    font-family: "Google Sans Flex";
+    background-color: rgba(0, 0, 0, 0.08);
+    padding: 10px 15px;
+    border-radius: 7px;
+    backdrop-filter: blur(5px);
+}
+
+.Description-Tour-Eiffel_p {
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    right: 20px;
+    color: white;
+    font-family: "Google Sans Flex";
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 10px 15px;
+    border-radius: 7px;
+    backdrop-filter: blur(5px);
+    text-align: justify;
+    max-height: 45%;
+    overflow: auto;
+}
+
+.element1 {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: 100%;
+    border: var(--border);
+    border-left: 0;
+}
+
+.container-Tour-Eiffel {
+    position: relative;
+    width: 1000px;
+    height: 600px;
+}
+
+
+
+/* ELEMENT 2 */
+/* Style et mise en page de l'élément 2 et du contenu qu'il contient */
+.image-Musee-du-Louvre {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    max-width: 512px;
+}
+
+.Description-Musee-du-Louvre_h3 {
+    position: absolute;
+    top: 25%;
+    left: 3.6%;
+    color: black;
+    font-family: "Google Sans Flex";
+    padding: 10px 15px;
+    border-radius: 7px;
+}
+
+.Description-Musee-du-Louvre_p {
+    position: absolute;
+    top: 35%;
+    left: 20px;
+    right: 20px;
+    color: black;
+    font-family: "Google Sans Flex";
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 7px;
+    text-align: justify;
+    max-height: 50%;
+    overflow-y: auto;
+}
+
+.element2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex: 1;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    border: var(--border);
+    border-left: 0;
+    border-right: 0;
+}
+
+.container-Musee-du-Louvre {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    box-sizing: border-box;
+    background-color: rgb(228, 228, 228);
+}
+
+
+
+/*------------------*/
+
+
+/* ELEMENT 3 */
+/* Style et mise en page de l'élément 3 et du contenu qu'il contient */
+.image-Notre-Dame {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    max-width: 512px;
+}
+
+.Description-Notre-Dame_h3 {
+    position: absolute;
+    top: 25%;
+    left: 3.6%;
+    color: black;
+    font-family: "Google Sans Flex";
+    padding: 10px 15px;
+    border-radius: 7px;
+}
+
+.Description-Notre-Dame_p {
+    position: absolute;
+    top: 35%;
+    left: 20px;
+    right: 20px;
+    color: black;
+    font-family: "Google Sans Flex";
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 7px;
+    text-align: justify;
+    max-height: 50%;
+    overflow-y: auto;
+}
+
+.element3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex: 1;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    border: var(--border);
+    border-top: 0;
+    border-left: 0;
+}
+
+.container-Notre-Dame {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    box-sizing: border-box;
+    background-color: rgb(207, 230, 255);
+}
+
+
+
+/* ELEMENT 4 */
+/* Style et mise en page de l'élément 4 et du contenu qu'il contient */
+.image-MSC {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: bottom;
+    filter: brightness(70%);
+}
+
+.Description-MSC_h2 {
+    position: absolute;
+    top: 10%;
+    left: 4.6%;
+    color: white;
+    font-family: "Google Sans Flex";
+    background-color: rgba(0, 0, 0, 0.08);
+    padding: 10px 15px;
+    border-radius: 7px;
+    backdrop-filter: blur(5px);
+}
+
+.Description-MSC_p {
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    right: 20px;
+    color: white;
+    font-family: "Google Sans Flex";
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 10px 15px;
+    border-radius: 7px;
+    backdrop-filter: blur(10px);
+    text-align: justify;
+    max-height: 45%;
+    overflow: auto;
+}
+
+.element4 {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: 100%;
+    border: var(--border);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.container-MSC {
+    position: relative;
+    width: 1000px;
+    height: 600px;
+}
+
+
+
+/* Mise en page element 1 et 2
+   ainsi que 3 et 4 */
+.element-1-2 {
+    display: flex;
+    flex-direction: row;
+    max-width: 100vw;
+}
+
+.element-3-4 {
+    display: flex;
+    flex-direction: row;
+    max-width: 100vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .video-paris-container {
+        overflow: hidden;
+        width: 0%;
+    }
+
+    .element-1-2,
+    .element-3-4 {
+        flex-direction: column;
+    }
+
+    .container-Musee-du-Louvre {
+        max-height: 360px;
+    }
+
+    .Description-Musee-du-Louvre_h3 {
+        top: 41%;
+    }
+
+    .Description-Musee-du-Louvre_p {
+        top: 55%;
+    }
+
+    .menu-deroulant {
+        flex-direction: column;
+        gap: 0;
+    }
+}
