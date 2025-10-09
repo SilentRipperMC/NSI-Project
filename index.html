@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ville de Paris</title>
+</head>
+<body>
+    <!-- Le conteneur principal de toute la page -->
+    <div class="container-tout">
+        <!-- Le conteneur du haut qui contient :
+        l'image, la vidéo, le menu, le logo et la description -->
+        <header class="top">
+            <div class="image-video">
+                <div class="image-paris-container">
+                    <img src="Assets/Paris.jpg" class="image-paris">
+                </div>
+                <div class="video-paris-container">
+                    <video autoplay controls src="Assets/Paris.mp4" class="video-paris"></video>
+                </div>
+            </div>
+
+            <!-- On crée le menu déroulant avec sous-menus déroulants  -->
+            <div class="menu-deroulant">
+                <a href="index.html">Accueil</a>
+                <a href="page-2.html">Monuments historiques</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Lieux extérieurs ▼</button>
+                    <div class="dropdown-content" id="dropdown-content1">
+                        <a href="page-2.html">Tour Eiffel</a>
+                        <a href="page-2.html">Champs-Élysées</a>
+                        <a href="page-2.html">Jardin du Luxembourg</a>
+                        <a href="page-2.html">Parc des Buttes-Chaumont</a>
+                        <a href="page-2.html">Montmartre</a>
+                        <a href="page-2.html">Seine & quais</a>
+                        <a href="page-2.html">Bois de Vincennes</a>
+                        <a href="page-2.html">Bois de Boulogne</a>
+                    </div>
+                </div>
+                
+                <a href="page-2.html">Musées</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Office de tourisme ▼</button>
+                    <div class="dropdown-content" id="dropdown-content2">
+                        <a href="page-2.html">Infos pratiques</a>
+                        <a href="page-2.html">Transports à Paris</a>
+                        <a href="page-2.html">Plans & brochures</a>
+                        <a href="page-2.html">Visites guidées</a>
+                        <a href="page-2.html">Événements à Paris</a>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <!-- La partie qui contient le logo de Paris et sa courte description -->
+            <div class="logo-description">
+                <img src="Assets/Paris-logo.png" class="logo-paris">
+                <div class="description">
+                    <p>Paris, capitale de la France, est divisée en vingt arrondissements et située au centre du Bassin parisien.<br>
+                       La ville, occupée depuis le IIIe siècle avant notre ère, tire son nom du peuple gaulois des Parisii.</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Le conteneur qui contient les éléments 1, 2, 3 et 4 -->
+        <div class="content">
+            <!-- Le conteneur qui contient les éléments 1 et 2, utile pour mettre les deux éléments en colonne
+            quand la largeur de l'écran est inférieur à 1000px -->
+            <div class="element-1-2">
+                <div class="element1">
+                    <div class="container-Tour-Eiffel">
+                        <img src="Assets/Tour-Eiffel.jpg" class="image-Tour-Eiffel">
+                        <div class="container-description-Tour-Eiffel">
+                            <h1 class="Description-Tour-Eiffel_h1">La Tour Eiffel :</h1>
+                            <h2 class="Description-Tour-Eiffel_h2">Une dame de fer au cœur de Paris</h2>
+                            <p class="Description-Tour-Eiffel_p">
+                                En 1889, Paris accueille l'Exposition universelle, célébrant le centenaire de la Révolution française.
+                                Pour marquer l'événement, un concours est lancé : il faut construire une tour monumentale sur le Champ-de-Mars.
+                                C’est Gustave Eiffel, un ingénieur passionné par le métal, qui remporte le projet avec une tour en fer de 300 mètres de haut.
+                                À l’époque, l’idée choque : beaucoup la trouvent laide, inutile, même monstrueuse.<br><br><br>
+
+                                Mais malgré les critiques, la construction commence en 1887.
+                                Il faudra un peu plus de deux ans, 18 038 pièces de fer et plus de 2,5 millions de rivets pour ériger ce géant de fer.
+                                Le 31 mars 1889, Gustave Eiffel grimpe lui-même les 1 710 marches pour planter le drapeau tricolore au sommet.<br><br><br>
+
+                                D’abord conçue pour n’être qu’éphémère, la Tour Eiffel finit par devenir un symbole.
+                                Grâce à la télégraphie sans fil, puis à la radio, elle prouve son utilité.
+                                Aujourd’hui, avec ses millions de visiteurs par an, elle est l’un des monuments les plus célèbres du monde.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="element2">
+                    <div class="container-Musee-du-Louvre">
+                        <img src="Assets/Musee_du_Louvre.png" class="image-Musee-du-Louvre">
+                        <div class="container-description-Musee-du-Louvre">
+                            <h3 class="Description-Musee-du-Louvre_h3">Le Musée du Louvre</h3>
+                            <p class="Description-Musee-du-Louvre_p">
+                                Le musée du Louvre, situé au cœur de Paris, est l'un des plus grands et des plus visités au monde. 
+                                Il abrite des chefs-d'œuvre tels que la Joconde, la Vénus de Milo et le Code de Hammurabi. 
+                                Ancien palais royal, il reflète toute la richesse culturelle et historique de la France.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Le conteneur qui contient les éléments 3 et 4, utile pour mettre les deux éléments en colonne
+            quand la largeur de l'écran est inférieur à 1000px -->
+            <div class="element-3-4">
+                <div class="element3">
+                    <div class="container-Notre-Dame">
+                        <img src="Assets/Notre-Dame-de-Paris.webp" class="image-Notre-Dame">
+                        <div class="container-description-Notre-Dame">
+                            <h3 class="Description-Notre-Dame_h3">La Cathédrale Notre-Dame de Paris</h3>
+                            <p class="Description-Notre-Dame_p">
+                                En 2025, Notre-Dame de Paris a rouvert ses portes après cinq années de restauration intense à la suite de l’incendie de 2019.
+                                Le monument, chef-d’œuvre de l’art gothique, a retrouvé toute sa splendeur,
+                                de sa charpente reconstruite à sa flèche emblématique, réinstallée selon les plans originaux de Viollet-le-Duc.<br><br>
+
+                                La cathédrale accueille à nouveau fidèles et visiteurs du monde entier.
+                                À l’intérieur, le mobilier restauré, les vitraux nettoyés et l’éclairage repensé offrent une expérience inédite.
+                                La visite est complétée par un parcours muséographique retraçant l’histoire du monument et de sa reconstruction.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="element4">
+                    <div class="container-MSC">
+                        <img src="Assets/Montmartre-et-le-Sacre-Cœur.jpg" class="image-MSC">
+                        <div class="container-description-MSC">
+                            <h2 class="Description-MSC_h2">Montmartre et le Sacré-Cœur</h2>
+                            <p class="Description-MSC_p">
+                                Montmartre est l’un des quartiers les plus pittoresques de Paris, célèbre pour son ambiance bohème et artistique.
+                                Ses ruelles pavées, ses ateliers d’artistes et la place du Tertre, où peintres et portraitistes exposent encore aujourd’hui,
+                                rappellent le charme d’un village d’antan au cœur de la capitale.<br><br>
+
+                                Dominant la butte, la basilique du Sacré-Cœur attire chaque année des millions de visiteurs.
+                                Son dôme blanc offre un panorama exceptionnel sur tout Paris, particulièrement magique au coucher du soleil.
+                                Entre patrimoine religieux et atmosphère créative, Montmartre incarne l’âme artistique et spirituelle de la ville.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- On crée le lien pour aller à la page suivante -->
+            <div class="container-page-suivante">
+                <div class="page-suivante">
+                    <a href="page-2.html">Page suivante</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Le conteneur du bas :
+        horaires et informations de contact de l'office de tourisme -->
+        <footer class="footer">
+            <!-- On crée le tableau des horaires de l'office de tourisme -->
+            <div class="tableau">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Jour</th>
+                        <th>Horaires</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Lundi</td>
+                        <td>10h00 – 12h45</td>
+                    </tr>
+                    <tr>
+                        <td>Mardi</td>
+                        <td>10h00 – 17h50</td>
+                    </tr>
+                    <tr>
+                        <td>Mercredi</td>
+                        <td>10h00 – 17h50</td>
+                    </tr>
+                    <tr>
+                        <td>Jeudi</td>
+                        <td>10h00 – 17h50</td>
+                    </tr>
+                    <tr>
+                        <td>Vendredi</td>
+                        <td>10h00 – 17h50</td>
+                    </tr>
+                    <tr>
+                        <td>Samedi</td>
+                        <td>10h00 – 17h50</td>
+                    </tr>
+                    <tr>
+                        <td>Dimanche</td>
+                        <td>10h00 – 17h50</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- On crée un <aside> pour les informations de contact de l'office de tourisme -->
+            <aside>
+                <p>Addresse : 25 rue des Pyramides, 75001 Paris</p>
+                <p>Numéro de téléphone : 01 49 52 53 01 </p>
+                <p>Adresse email : <a href="mailto:internet@parisinfo.com">internet@parisinfo.com</a></p>
+                <p>Site officiel : <a href="https://parisjetaime.com"> Office de tourisme Paris Je T'aime</a></p>
+            </aside>
+            <!-- On crée l'ancre qui permet de retourner en haut de page -->
+            <a href="#top" class="ancre">↑</a>
+            <!-- On crée le message qui dit qu'il faut porter un masque -->
+            <p class="masque">En raison des conditions sanitaires le port du masque est<br>obligatoire lors des visites culturelles</p>
+        </footer>
+    </div>
+</body>
+</html>

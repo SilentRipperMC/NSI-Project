@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ville de Paris page 2</title>
+</head>
+<body>
+    <!-- Le conteneur principal de toute la page -->
+    <div class="container-tout">
+        <!-- Le conteneur du haut qui contient :
+        l'image, la vidéo, le menu, le logo et la description -->
+        <header class="top">
+            <div class="image-video">
+                <div class="image-paris-container">
+                    <img src="Assets/Paris.jpg" class="image-paris">
+                </div>
+                <div class="video-paris-container">
+                    <video autoplay controls src="Assets/Paris.mp4" class="video-paris"></video>
+                </div>
+            </div>
+
+            <!-- On crée le menu déroulant avec sous-menus déroulants  -->
+            <div class="menu-deroulant">
+                <a href="index.html">Accueil</a>
+                <a href="page-2.html">Monuments historiques</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Lieux extérieurs ▼</button>
+                    <div class="dropdown-content" id="dropdown-content1">
+                        <a href="page-2.html">Tour Eiffel</a>
+                        <a href="page-2.html">Champs-Élysées</a>
+                        <a href="page-2.html">Jardin du Luxembourg</a>
+                        <a href="page-2.html">Parc des Buttes-Chaumont</a>
+                        <a href="page-2.html">Montmartre</a>
+                        <a href="page-2.html">Seine & quais</a>
+                        <a href="page-2.html">Bois de Vincennes</a>
+                        <a href="page-2.html">Bois de Boulogne</a>
+                    </div>
+                </div>
+                
+                <a href="page-2.html">Musées</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Office de tourisme ▼</button>
+                    <div class="dropdown-content" id="dropdown-content2">
+                        <a href="page-2.html">Infos pratiques</a>
+                        <a href="page-2.html">Transports à Paris</a>
+                        <a href="page-2.html">Plans & brochures</a>
+                        <a href="page-2.html">Visites guidées</a>
+                        <a href="page-2.html">Événements à Paris</a>
+                    </div>
+                </div>
+
+                
+            </div>
+        </header>
+
+        <!-- Le message qui dit que la page est en construction -->
+         <div class="container-page-en-construction">
+            <div class="page-en-construction">🚧 Cette page est en construction 🚧</div>
+        </div>
+
+        <!-- Le conteneur du bas :
+        horaires et informations de contact de l'office de tourisme -->
+        <footer class="footer">
+            <!-- On crée le tableau des horaires de l'office de tourisme -->
+            <div class="tableau">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Jour</th>
+                        <th>Horaires</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Lundi</td>
+                        <td>10h00 – 12h45</td>
+                    </tr>
+                    <tr>
+                        <td>Mardi</td>
+                        <td>10h00 – 17h50</td>
+                    </tr>
+                    <tr>
+                        <td>Mercredi</td>
+                        <td>10h00 – 17h50</td>
+                    </tr>
+                    <tr>
+                        <td>Jeudi</td>
+                        <td>10h00 – 17h50</td>
+                    </tr>
+                    <tr>
+                        <td>Vendredi</td>
+                        <td>10h00 – 17h50</td>
+                    </tr>
+                    <tr>
+                        <td>Samedi</td>
+                        <td>10h00 – 17h50</td>
+                    </tr>
+                    <tr>
+                        <td>Dimanche</td>
+                        <td>10h00 – 17h50</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- On crée un <aside> pour les informations de contact de l'office de tourisme -->
+            <aside>
+                <p>Addresse : 25 rue des Pyramides, 75001 Paris</p>
+                <p>Numéro de téléphone : 01 49 52 53 01 </p>
+                <p>Adresse email : <a href="mailto:internet@parisinfo.com">internet@parisinfo.com</a></p>
+                <p>Site officiel : <a href="https://parisjetaime.com"> Office de tourisme Paris Je T'aime</a></p>
+            </aside>
+            <!-- On crée l'ancre qui permet de retourner en haut de page -->
+            <a href="#top" class="ancre">↑</a>
+            <!-- On crée le message qui dit qu'il faut porter un masque -->
+            <p class="masque">En raison des conditions sanitaires le port du masque est<br>obligatoire lors des visites culturelles</p>
+        </footer>
+    </div>
+</body>
+</html>
