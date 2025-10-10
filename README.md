@@ -1,1 +1,1 @@
-# https://silentrippermc.github.io/NSI-Project/
+https://silentrippermc.github.io/NSI-Project/
