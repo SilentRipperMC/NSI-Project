@@ -286,7 +286,8 @@ video:hover {
 
 .container-Tour-Eiffel {
     position: relative;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     height: 600px;
 }
 
@@ -337,6 +338,7 @@ video:hover {
     border: var(--border);
     border-left: 0;
     border-right: 0;
+    max-width: 512px;
 }
 
 .container-Musee-du-Louvre {
@@ -397,6 +399,7 @@ video:hover {
     border: var(--border);
     border-top: 0;
     border-left: 0;
+    max-width: 510px;
 }
 
 .container-Notre-Dame {
@@ -461,7 +464,8 @@ video:hover {
 
 .container-MSC {
     position: relative;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     height: 600px;
 }
 
@@ -656,6 +660,16 @@ Si la largeur de l'écran est inférieur à 1000px :
     .element-1-2,
     .element-3-4 {
         flex-direction: column;
+    }
+
+    .element2 {
+        max-width: 100%;
+        border-top: none;
+    }
+
+    .element3 {
+        max-width: 100%;
+        border-right: none;
     }
 
     .container-Musee-du-Louvre {
